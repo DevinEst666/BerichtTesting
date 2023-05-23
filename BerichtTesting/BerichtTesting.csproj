@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B61EB86-4B8B-467E-8BF2-44E6929A6AF0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BerichtTesting</RootNamespace>
+    <AssemblyName>BerichtTesting</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Sagede.ApplicationServer90.OfficeLine.Driver">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\9.0\Shared\Sagede.ApplicationServer90.OfficeLine.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.OfficeLine.Data">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\9.0\Shared\Sagede.OfficeLine.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.OfficeLine.Engine">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\9.0\Shared\Sagede.OfficeLine.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.OfficeLine.Shared">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\9.0\Shared\Sagede.OfficeLine.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.OfficeLine.Shared.RealTimeData">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\9.0\Shared\Sagede.OfficeLine.Shared.RealTimeData.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.Shared.ControlCenter.Controller">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\9.0\Shared\Sagede.Shared.ControlCenter.Controller.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.Shared.Core, Version=9.0.0.0, Culture=neutral, PublicKeyToken=4ad8971889b881a9, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_32\Sagede.Shared.Core\v4.0_9.0.0.0__4ad8971889b881a9\Sagede.Shared.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.Shared.RealTimeData.Common">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\9.0\Shared\Sagede.Shared.RealTimeData.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.Shared.ReportDesigner">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\9.0\Shared\Sagede.Shared.ReportDesigner.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.Shared.ReportingEngine">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\9.0\Shared\Sagede.Shared.ReportingEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.Shared.ReportViewerControl">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Sage\Sage 100\9.0\Shared\Sagede.Shared.ReportViewerControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Sagede.Shared.ServiceModel, Version=9.0.0.0, Culture=neutral, PublicKeyToken=4ad8971889b881a9, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_32\Sagede.Shared.ServiceModel\v4.0_9.0.0.0__4ad8971889b881a9\Sagede.Shared.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
