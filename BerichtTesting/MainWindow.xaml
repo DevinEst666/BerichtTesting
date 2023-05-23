@@ -20,9 +20,9 @@
         <TextBlock Text="Passwort: " Grid.Row="1" HorizontalAlignment="Right"/>
         <Button Content="Öffnen" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center"              
                 HorizontalAlignment="Center" Width="100" Click="Button_Click"/>
-        <TextBlock x:Name="inputUser" Grid.Row="0" Background="LightGray" Width="200" Grid.Column="1"
+        <TextBox x:Name="inputUser" Grid.Row="0" Background="LightGray" Width="200" Grid.Column="1"
                    VerticalAlignment="Top" HorizontalAlignment="Center"/>
-        <TextBlock x:Name="inputPasswort" Background="LightGray" Grid.Column="1"  Width="200" Grid.Row="1"
+        <TextBox x:Name="inputPasswort" Background="LightGray" Grid.Column="1"  Width="200" Grid.Row="1"
                    VerticalAlignment="Top" HorizontalAlignment="Center"/>
     </Grid>
 </Window>
