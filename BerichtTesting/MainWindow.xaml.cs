@@ -112,7 +112,7 @@ namespace BerichtTesting
             return vm;
         }
 
-        private string _Password = "Admin1234";
+        private string _Password = "";
         public string Password
         {
             get
@@ -228,11 +228,11 @@ namespace BerichtTesting
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string DataBase = "OLReweAbf";
-            string UserName = "Pandev";
-            string ApplicationId = "Abf";
+            string DataBase = "";
+            string UserName = "";
+            string ApplicationId = "";
             string sprache = "de";
-            string password = "Admin1234";
+            string password = "";
             IEndpoint MyEndpoint = ServerConfigurationProxy.GetSDataHttpsEndpoint(true, 0, 0);
 
             var vm = CreateViewModel();
